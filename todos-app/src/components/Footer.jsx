@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="bg-gray-800 text-white text-center py-4">
-      <p>&copy; 2025 TaskMaster. Todos los derechos reservados.</p>
+      <p>&copy; 2025 TaskMaster.</p>
     </footer>
   );
 }

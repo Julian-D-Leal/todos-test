@@ -1,7 +1,7 @@
 const features = [
-  { title: "Gestión de tareas", desc: "Crea, edita y elimina tus pendientes fácilmente." },
-  { title: "Prioridades", desc: "Organiza por urgencia y enfócate en lo importante." },
-  { title: "Recordatorios", desc: "Recibe alertas para no olvidar nada." },
+  { title: "Task management", desc: "Create, edit, and delete your tasks easily." },
+  { title: "Priorities", desc: "Organize by urgency and focus on what matters." },
+  { title: "Reminders", desc: "Get alerts so you don't forget anything." },
 ];
 
 export default function Features() {

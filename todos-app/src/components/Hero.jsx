@@ -34,7 +34,7 @@ export default function Hero() {
           ))}
         </div>
         <button className="bg-blue-600 text-white mt-6 px-6 py-2 rounded hover:bg-blue-700 transition">
-          Empezar ahora
+          Add New Task
         </button>
       </div>
     </section>
