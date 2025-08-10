@@ -17,19 +17,19 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
 
-      - name: Install dependencies
-      - uses: bahmutov/npm-install@v1
+      - name: 📦 Instalar dependencias
+        uses: bahmutov/npm-install@v1
         with:
-          working-directory: ./todos-app
-
-      - name: Build project
+          working-directory: todos-app
+      - name: ⚙️ Build con Vite
         run: npm run build
+        working-directory: todos-app
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v4
         with:
           name: production-files
-          path: ./dist
+          path: todos-app/dist
 
   deploy:
     name: Deploy
@@ -42,10 +42,10 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: production-files
-          path: ./dist
+          path: todos-app/dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: todos-app/dist
